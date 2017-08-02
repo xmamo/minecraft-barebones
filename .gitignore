@@ -1,0 +1,9 @@
+/.idea/
+/Fortress.dat
+/Mineshaft.dat
+/scoreboard.dat
+/villages.dat
+/villages_end.dat
+/villages_nether.dat
+
+__pycache__/

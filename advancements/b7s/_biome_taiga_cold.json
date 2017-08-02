@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_taiga_cold": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:taiga_cold"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_taiga_cold"
+	}
+}

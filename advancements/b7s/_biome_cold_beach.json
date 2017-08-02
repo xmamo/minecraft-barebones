@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_cold_beach": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:cold_beach"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_cold_beach"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"criteria": {
+		"b7s:impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

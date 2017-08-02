@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_sky": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:sky"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_sky"
+	}
+}

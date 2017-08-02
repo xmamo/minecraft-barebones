@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_birch_forest_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:birch_forest_hills"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_birch_forest_hills"
+	}
+}

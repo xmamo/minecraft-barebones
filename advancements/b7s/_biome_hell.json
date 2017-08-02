@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_hell": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:hell"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_hell"
+	}
+}

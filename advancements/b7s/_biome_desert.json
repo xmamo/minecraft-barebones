@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_desert": {
+			"trigger": "minecraft:desert",
+			"conditions": {
+				"biome": "minecraft:desert"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_desert"
+	}
+}

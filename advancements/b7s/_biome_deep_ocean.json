@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_deep_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:deep_ocean"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_deep_ocean"
+	}
+}

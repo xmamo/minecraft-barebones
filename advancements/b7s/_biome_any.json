@@ -1,0 +1,11 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_any": {
+			"trigger": "minecraft:location"
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_any"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_swampland": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:swampland"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_swampland"
+	}
+}

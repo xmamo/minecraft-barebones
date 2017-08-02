@@ -1,0 +1,14 @@
+{
+	"parent": "b7s:root",
+	"criteria": {
+		"b7s:_biome_the_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:the_void"
+			}
+		}
+	},
+	"rewards": {
+		"function": "b7s:advancement/_biome_the_void"
+	}
+}
