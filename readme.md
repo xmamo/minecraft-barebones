@@ -49,4 +49,4 @@ Please avoid extending BareBones' functionality by simply putting new functions 
 or `advancements/b7s` folders. Instead, create your own separate folder. If you think this might be a kind of
 general functionality which other players could use too, please issue a pull request or submit a ticket.
 In general, avoid to modify the BareBones data pack by itself or to set/unset/add/remove scores or tags which are
-undocumented, as future releases of BareBones might brick your current setup.
+undocumented, as future releases of BareBones might break your current setup.
