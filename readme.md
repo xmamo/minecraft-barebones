@@ -4,7 +4,8 @@ at players and server administrators: it enables players to use additional comma
 exposes a handy function API which can be used to further extend the server's functionality.
 
 ## Installation
-1. Download the BareBones zip folder and extract it somewhere;
+1. Download the BareBones zip folder from [here](https://github.com/xMamo/Minecraft-BareBones/releases/latest) and
+   extract it somewhere;
 2. Move the `functions` folder from the extracted directory into the `data` folder of the world of your server;
 3. Log into your server and execute the commands `/reload` and `/function b7s:install`;
 4. Move the `advancements` folder from the extracted directory into the `data` folder of the word of your server;
