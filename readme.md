@@ -11,14 +11,6 @@ exposes a handy function API which can be used to further extend the server's fu
 5. Execute a `/reload` once again;
 6. Enjoy!
 
-## Glossary
-In order to make the documentation more readable and avoid using convoluted phrases over and over again, I've defined
-some terms. Please consider to read or at least skim through this section before reading on.
-
-### Player ID
-BareBones gives each player a unique ID, using the `b7s:id` score. By default, this score is visible in the tab list.
-It is the only score regular players might be aware of.
-
 ## Commands
 BareBones installs a series of custom commands, accessible through triggers. Below are all commands accessible as of
 the current version.
@@ -34,8 +26,8 @@ After teleporting home, it might be useful to teleport back to where you were be
 command.
 
 ### `/trigger b7s:tpreq set <id>`
-Sends a teleportation request to player with ID `id`. If the other player accepts the requests, you will be teleported
-to that player.
+Sends a teleportation request to the player with ID `id` (you can view the IDs of players by pressing the Tab key). If
+the other player accepts the requests, you will be teleported to that player.
 
 ## Functions
 BareBones provides a useful function API which you can use to add further functionality to your server. Just navigate
