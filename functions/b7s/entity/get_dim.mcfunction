@@ -1,7 +1,7 @@
 # Gets the dimension of a player or entity.
 #
 # Scores set:
-# b7s:dim — the dimension of the entity. Can be -1, 0, 1 (The Nether, The Overworld, The End respectively)
+# b7s:dim — the dimension of the entity. Nether = -1, Overworld = 0, End = 1
 #
 # Usage:
 # /execute <entity> ~ ~ ~ function b7s:entity/get_dim

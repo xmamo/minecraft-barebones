@@ -1,7 +1,7 @@
-# Decodes the dimension scores of a player or entity.
+# Decodes the dimension tags of a player or entity.
 #
 # Tags required:
-# b7s:dim_nether, b7s:dim_overworld, b7s:dim_end — the entity's location, encoded in tags
+# b7s:dim_nether, b7s:dim_overworld, b7s:dim_end — the entity's dimension tags
 #
 # Scores set:
 # b7s:dim — to the dimension matching the entity's dimension tags

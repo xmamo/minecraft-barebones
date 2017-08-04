@@ -1,4 +1,5 @@
-# Places and destroys a block of redstone at the position of the entity executing the command.
+# Places and destroys a block of redstone at the position of the entity
+# executing the command.
 # For example, this can be useful to activate structure blocks.
 #
 # Usage:

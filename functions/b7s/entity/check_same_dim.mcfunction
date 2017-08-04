@@ -1,4 +1,5 @@
-# Checks whether a player or entity is in the same dimension as its dimension score.
+# Checks whether a player or entity is in the same dimension as its dimension
+# score.
 #
 # Scores required:
 # b7s:dim — the dimension to check the entity against

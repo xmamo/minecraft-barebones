@@ -1,4 +1,5 @@
-# Installs BareBones. To be used before using any other BareBones function for the first time.
+# Installs BareBones. To be used before using any other BareBones function for
+# the first time.
 #
 # Usage:
 # /function b7s:install

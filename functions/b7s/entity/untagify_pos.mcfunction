@@ -1,7 +1,9 @@
 # Decodes the position tags of a player or entity.
 #
 # Tags required:
-# b7s:x_0, …, b7s:x_25, b7s:y_0, …, b7s:y_13, b7s:z_0, …, b7s:z_25 — the entity's position, encoded in tags
+# b7s:x_0, …, b7s:x_25 — the entity's x coordinate, encoded in tags
+# b7s:y_0, …, b7s:y_12 — the entity's y coordinate, encoded in tags
+# b7s:z_0, …, b7s:z_25 — the entity's z coordinate, encoded in tags
 #
 # Scores set:
 #                        25

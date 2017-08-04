@@ -1,7 +1,8 @@
 # Decodes the rotation tags of a player or entity.
 #
 # Tags required:
-# b7s:rot_x_0, …, b7s:rot_x_7, b7s:rot_y_0, …, b7s:rot_y_8 — the entity's rotation, encoded in tags
+# b7s:rot_x_0, …, b7s:rot_x_7 — the entity's x rotation, encoded in tags
+# b7s:rot_y_0, …, b7s:rot_y_8 — the entity's y rotation, encoded in tags
 #
 # Scores set:
 #                      7

@@ -5,12 +5,12 @@
 # b7s:rot_y — the y rotation of the entity
 #
 # Tags set:
-#                                                           7
-# b7s:rot_x_0, …, b7s:rot_x_7 — such that b7s:rot_x = -90 + ∑ b7s:rot_x_i × 2^i
-#                                                           i=1
-#                                                            8
-# b7s:rot_y_0, …, b7s:rot_y_8 — such that b7s:rot_y = -180 + ∑ b7s:rot_y_i × 2^i
-#                                                            i=0
+#                                                      7
+# b7s:rot_x_0, …, b7s:rot_x_7 — s.t. b7s:rot_x = -90 + ∑ b7s:rot_x_i × 2^i
+#                                                      i=1
+#                                                       8
+# b7s:rot_y_0, …, b7s:rot_y_8 — s.t. b7s:rot_y = -180 + ∑ b7s:rot_y_i × 2^i
+#                                                       i=0
 #
 # Usage:
 # /scoreboard players set <entity> b7s:rot_x <rot_x>
