@@ -56,3 +56,7 @@ issue a pull request or submit a ticket. In general, avoid to modify the
 BareBones data pack by itself or to set, unset, add or remove scores or tags
 which are undocumented, as future releases of BareBones might break your
 current setup.
+
+## License
+BareBones is licensed under the Mozilla Public License Version 2.0. Please
+check out [license.txt](license.txt) for more information.
