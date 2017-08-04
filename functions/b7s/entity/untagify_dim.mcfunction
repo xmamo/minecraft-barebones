@@ -1,7 +1,11 @@
-# Decodes the dimension scores of a player or entity.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Decodes the dimension tags of a player or entity.
 #
 # Tags required:
-# b7s:dim_nether, b7s:dim_overworld, b7s:dim_end — the entity's location, encoded in tags
+# b7s:dim_nether, b7s:dim_overworld, b7s:dim_end — the entity's dimension tags
 #
 # Scores set:
 # b7s:dim — to the dimension matching the entity's dimension tags

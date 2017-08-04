@@ -1,8 +1,16 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+print('# This Source Code Form is subject to the terms of the Mozilla Public')
+print('# License, v. 2.0. If a copy of the MPL was not distributed with this')
+print('# file, You can obtain one at http://mozilla.org/MPL/2.0/.')
+print()
 print('# Teleports a player or entity to a given rotation.')
 print('#')
 print('# Scores required:')
-print('# b7s:rot_x — the new x rotation for the entity.'
-print('# b7s:rot_y — the new y rotation for the entity.'
+print('# b7s:rot_x — the new x rotation for the entity.')
+print('# b7s:rot_y — the new y rotation for the entity.')
 print('#')
 print('# Usage:')
 print('# /scoreboard players set <entity> b7s:rot_x <rot_x>')

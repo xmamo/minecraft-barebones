@@ -1,9 +1,16 @@
-# Decodes the location scores of a player or entity.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Decodes the location tags of a player or entity.
 #
 # Tags required:
-# b7s:dim_nether, b7s:dim_overworld, b7s:dim_end — the entity's location, encoded in tags
-# b7s:x_0, …, b7s:x_25, b7s:y_0, …, b7s:y_13, b7s:z_0, …, b7s:z_25 — the entity's position, encoded in tags
-# b7s:rot_x_0, …, b7s:rot_x_7, b7s:rot_y_0, …, b7s:rot_y_8 — the entity's rotation, encoded in tags
+# b7s:dim_nether, b7s:dim_overworld, b7s:dim_end — the entity's location tags
+# b7s:x_0, …, b7s:x_25 — the entity's x coordinate, encoded in tags
+# b7s:y_0, …, b7s:y_12 — the entity's y coordinate, encoded in tags
+# b7s:z_0, …, b7s:z_25 — the entity's z coordinate, encoded in tags
+# b7s:rot_x_0, …, b7s:rot_x_7 — the entity's x rotation, encoded in tags
+# b7s:rot_y_0, …, b7s:rot_y_8 — the entity's y rotation, encoded in tags
 #
 # Scores set:
 # b7s:dim — to the dimension matching the entity's dimension tags

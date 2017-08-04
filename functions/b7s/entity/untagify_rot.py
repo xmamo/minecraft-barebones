@@ -1,7 +1,16 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+print('# This Source Code Form is subject to the terms of the Mozilla Public')
+print('# License, v. 2.0. If a copy of the MPL was not distributed with this')
+print('# file, You can obtain one at http://mozilla.org/MPL/2.0/.')
+print()
 print('# Decodes the rotation tags of a player or entity.')
 print('#')
 print('# Tags required:')
-print("# b7s:rot_x_0, …, b7s:rot_x_7, b7s:rot_y_0, …, b7s:rot_y_8 — the entity's rotation, encoded in tags")
+print("# b7s:rot_x_0, …, b7s:rot_x_7 — the entity's x rotation, encoded in tags")
+print("# b7s:rot_y_0, …, b7s:rot_y_8 — the entity's y rotation, encoded in tags")
 print('#')
 print('# Scores set:')
 print('#                      7')

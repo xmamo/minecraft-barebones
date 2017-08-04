@@ -1,4 +1,9 @@
-# Checks whether a player or entity is in the same dimension as its dimension score.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Checks whether a player or entity is in the same dimension as its dimension
+# score.
 #
 # Scores required:
 # b7s:dim — the dimension to check the entity against

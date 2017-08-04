@@ -1,3 +1,7 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 # This function is designed to be called automatically by players once every second, using custom advancements provided
 # by BareBones. Avoid calling this function by your own.
 

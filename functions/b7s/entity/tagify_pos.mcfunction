@@ -1,3 +1,7 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 # Encodes the position scores of a player or entity in a series of tags.
 #
 # Scores required:
@@ -6,15 +10,15 @@
 # b7s:z — the z coordinate of the entity
 #
 # Tags set:
-#                                                      25
-# b7s:x_0, …, b7s:x_25 — such that b7s:x = -30000000 + ∑ b7s:x_i × 2^i
-#                                                      i=0
-#                                                  12
-# b7s:y_0, …, b7s:y_12 — such that b7s:y = -4096 + ∑ b7s:y_i × 2^i
-#                                                  i=0
-#                                                      25
-# b7s:z_0, …, b7s:z_25 — such that b7s:z = -30000000 + ∑ b7s:z_i × 2^i
-#                                                      i=0
+#                                                 25
+# b7s:x_0, …, b7s:x_25 — s.t. b7s:x = -30000000 + ∑ b7s:x_i × 2^i
+#                                                 i=0
+#                                             12
+# b7s:y_0, …, b7s:y_12 — s.t. b7s:y = -4096 + ∑ b7s:y_i × 2^i
+#                                             i=0
+#                                                 25
+# b7s:z_0, …, b7s:z_25 — s.t. b7s:z = -30000000 + ∑ b7s:z_i × 2^i
+#                                                 i=0
 #
 # Usage:
 # /scoreboard players set <entity> b7s:x <x>

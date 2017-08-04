@@ -1,7 +1,17 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+print('# This Source Code Form is subject to the terms of the Mozilla Public')
+print('# License, v. 2.0. If a copy of the MPL was not distributed with this')
+print('# file, You can obtain one at http://mozilla.org/MPL/2.0/.')
+print()
 print('# Decodes the position tags of a player or entity.')
 print('#')
 print('# Tags required:')
-print("# b7s:x_0, …, b7s:x_25, b7s:y_0, …, b7s:y_13, b7s:z_0, …, b7s:z_25 — the entity's position, encoded in tags")
+print("# b7s:x_0, …, b7s:x_25 — the entity's x coordinate, encoded in tags")
+print("# b7s:y_0, …, b7s:y_12 — the entity's y coordinate, encoded in tags")
+print("# b7s:z_0, …, b7s:z_25 — the entity's z coordinate, encoded in tags")
 print('#')
 print('# Scores set:')
 print('#                        25')
