@@ -28,6 +28,7 @@ scoreboard objectives add b7s:z dummy
 scoreboard objectives add b7s:rot_x dummy
 scoreboard objectives add b7s:rot_y dummy
 
+scoreboard objectives add b7s:info trigger
 scoreboard objectives add b7s:sethome trigger
 scoreboard objectives add b7s:tphome trigger
 scoreboard objectives add b7s:tpback trigger
