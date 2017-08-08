@@ -17,6 +17,10 @@ scoreboard players operation @s[score_b7s:id=0] b7s:id = b7s:_dummy b7s:id
 execute @s[tag=!b7s:initialized] ~ ~ ~ function b7sp:entity/player/welcome
 scoreboard players tag @s[tag=!b7s:initialized] add b7s:initialized
 
+scoreboard players enable @s[tag=b7s:initialized] b7s:info
+execute @s[tag=b7s:initialized,score_b7s:info_min=1] ~ ~ ~ function b7s:command/info
+scoreboard players set @s[tag=b7s:initialized,score_b7s:info_min=1] b7s:info 0
+
 scoreboard players enable @s[tag=b7s:initialized] b7s:tpspawn
 execute @s[tag=b7s:initialized,score_b7s:tpspawn_min=1] ~ ~ ~ function b7s:command/tpspawn
 scoreboard players set @s[tag=b7s:initialized,score_b7s:tpspawn_min=1] b7s:tpspawn 0
