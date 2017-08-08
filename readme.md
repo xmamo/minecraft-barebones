@@ -22,6 +22,9 @@ extend the server's functionality.
 BareBones installs a series of custom commands, accessible through triggers.
 Below are all commands accessible as of the current version.
 
+### `/trigger b7s:info set 1`
+Displays basic information about the BareBones data pack.
+
 ### `/trigger b7s:sethome set 1`
 Sets your home location. You can teleport back to it using
 `/trigger b7s:tphome set 1`
