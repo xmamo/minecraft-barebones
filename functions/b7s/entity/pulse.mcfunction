@@ -9,5 +9,6 @@
 # Usage:
 # execute <entity> ~ ~ ~ function b7s:entity/pulse
 
+function b7s:entity/track_success
 fill ~ ~ ~ ~ ~ ~ minecraft:redstone_block 0 replace minecraft:air
-fill ~ ~ ~ ~ ~ ~ minecraft:air 0 replace minecraft:redstone_block
+execute @s[score_b7s:success_min=1] ~ ~ ~ setblock ~ ~ ~ minecraft:air
