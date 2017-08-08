@@ -12,13 +12,11 @@ gamerule commandBlockOutput false
 gamerule logAdminCommands false
 
 scoreboard objectives add b7s:_tmp dummy
-
 scoreboard objectives add b7s:_left stat.leaveGame
 
 scoreboard objectives add b7s:id dummy
-
+scoreboard objectives add b7s:success dummy
 scoreboard objectives add b7s:biome dummy
-
 scoreboard objectives add b7s:req_from dummy
 
 scoreboard objectives add b7s:dim dummy
