@@ -10,11 +10,15 @@ function b7sp:entity/player/pre_update
 scoreboard players reset @s[score_b7s:_left_min=1] b7s:req_from
 scoreboard players reset @s[score_b7s:_left_min=1] b7s:_left
 
+function b7s:entity/track_success unless @s[score_b7s:success_min=-2147483648]
+function b7s:entity/track_aff_blocks unless @s[score_b7s:aff_blocks_min=-2147483648]
+function b7s:entity/track_aff_entities unless @s[score_b7s:aff_entities_min=-2147483648]
+function b7s:entity/track_aff_items unless @s[score_b7s:aff_items_min=-2147483648]
+function b7s:entity/track_query_result unless @s[score_b7s:query_result_min=-2147483648]
+
 scoreboard players add @s b7s:id 0
 execute @s[score_b7s:id=0] ~ ~ ~ scoreboard players add b7s:_dummy b7s:id 1
 scoreboard players operation @s[score_b7s:id=0] b7s:id = b7s:_dummy b7s:id
-
-function b7s:entity/track_success unless @s[score_b7s:success_min=-2147483648]
 
 execute @s[tag=!b7s:initialized] ~ ~ ~ function b7sp:entity/player/welcome
 scoreboard players tag @s[tag=!b7s:initialized] add b7s:initialized

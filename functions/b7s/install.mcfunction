@@ -14,8 +14,13 @@ gamerule logAdminCommands false
 scoreboard objectives add b7s:_tmp dummy
 scoreboard objectives add b7s:_left stat.leaveGame
 
-scoreboard objectives add b7s:id dummy
+scoreboard objectives add b7s:aff_blocks dummy
+scoreboard objectives add b7s:aff_entities dummy
+scoreboard objectives add b7s:aff_items dummy
+scoreboard objectives add b7s:query_result dummy
 scoreboard objectives add b7s:success dummy
+
+scoreboard objectives add b7s:id dummy
 scoreboard objectives add b7s:biome dummy
 scoreboard objectives add b7s:req_from dummy
 
