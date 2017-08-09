@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Tracks the SuccessCount stat of an or entity. Result is stored in the
-# entity's `b7s:success` score. Players are tracked by default by BareBones,
-# so you don't need to call this function on them.
+# entity's `b7s:success` score. Players are tracked by default, so you don't
+# need to call this function on them.
 #
 # Usage:
 # /execute <entity> ~ ~ ~ function b7s:entity/track_success
