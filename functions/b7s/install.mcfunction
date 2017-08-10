@@ -18,7 +18,7 @@ scoreboard objectives add b7s:aff_blocks dummy
 scoreboard objectives add b7s:aff_entities dummy
 scoreboard objectives add b7s:aff_items dummy
 scoreboard objectives add b7s:query_result dummy
-scoreboard objectives add b7s:success dummy
+scoreboard objectives add b7s:success_cnt dummy
 
 scoreboard objectives add b7s:id dummy
 scoreboard objectives add b7s:biome dummy

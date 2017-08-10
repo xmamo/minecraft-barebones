@@ -25,17 +25,17 @@ print('summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["b7s:_marker"]}')
 print()
 for exponent in range(25, -1, -1):
 	print('tp @e[tag=b7s:_marker] ~{} ~ ~'.format(-2 ** exponent))
-	print('scoreboard players add @s[score_b7s:success_min=1] b7s:x {}'.format(2 ** exponent))
+	print('scoreboard players add @s[score_b7s:success_cnt_min=1] b7s:x {}'.format(2 ** exponent))
 
 print()
 for exponent in range(12, -1, -1):
 	print('tp @e[tag=b7s:_marker] ~ ~{} ~'.format(-2 ** exponent))
-	print('scoreboard players add @s[score_b7s:success_min=1] b7s:y {}'.format(2 ** exponent))
+	print('scoreboard players add @s[score_b7s:success_cnt_min=1] b7s:y {}'.format(2 ** exponent))
 
 print()
 for exponent in range(25, -1, -1):
 	print('tp @e[tag=b7s:_marker] ~ ~ ~{}'.format(-2 ** exponent))
-	print('scoreboard players add @s[score_b7s:success_min=1] b7s:z {}'.format(2 ** exponent))
+	print('scoreboard players add @s[score_b7s:success_cnt_min=1] b7s:z {}'.format(2 ** exponent))
 
 print()
 print('kill @e[tag=b7s:_marker]')
