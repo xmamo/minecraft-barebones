@@ -12,13 +12,16 @@ gamerule commandBlockOutput false
 gamerule logAdminCommands false
 
 scoreboard objectives add b7s:_tmp dummy
-
 scoreboard objectives add b7s:_left stat.leaveGame
 
+scoreboard objectives add b7s:aff_blocks dummy
+scoreboard objectives add b7s:aff_entities dummy
+scoreboard objectives add b7s:aff_items dummy
+scoreboard objectives add b7s:query_result dummy
+scoreboard objectives add b7s:success_cnt dummy
+
 scoreboard objectives add b7s:id dummy
-
 scoreboard objectives add b7s:biome dummy
-
 scoreboard objectives add b7s:req_from dummy
 
 scoreboard objectives add b7s:dim dummy
@@ -28,6 +31,7 @@ scoreboard objectives add b7s:z dummy
 scoreboard objectives add b7s:rot_x dummy
 scoreboard objectives add b7s:rot_y dummy
 
+scoreboard objectives add b7s:info trigger
 scoreboard objectives add b7s:sethome trigger
 scoreboard objectives add b7s:tphome trigger
 scoreboard objectives add b7s:tpback trigger
