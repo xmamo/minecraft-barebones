@@ -39,6 +39,7 @@ scoreboard objectives add b7s:rot_y dummy
 
 scoreboard objectives add b7s:info trigger
 scoreboard objectives add b7s:sethome trigger
+scoreboard objectives add b7s:tpspawn trigger
 scoreboard objectives add b7s:tphome trigger
 scoreboard objectives add b7s:tpback trigger
 scoreboard objectives add b7s:tpreq trigger
