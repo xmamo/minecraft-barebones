@@ -5,5 +5,3 @@
 scoreboard players operation b7s:config_overworld b7s:spawn_x = @s b7s:x
 scoreboard players operation b7s:config_overworld b7s:spawn_y = @s b7s:y
 scoreboard players operation b7s:config_overworld b7s:spawn_z = @s b7s:z
-scoreboard players operation b7s:config_overworld b7s:spawn_rot_x = @s b7s:rot_x
-scoreboard players operation b7s:config_overworld b7s:spawn_rot_y = @s b7s:rot_y
