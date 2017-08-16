@@ -5,6 +5,4 @@
 scoreboard players test b7s:config_overworld b7s:spawn_x -2147483648
 execute @s[score_b7s:success_cnt_min=1] ~ ~ ~ scoreboard players test b7s:config_overworld b7s:spawn_y -2147483648
 execute @s[score_b7s:success_cnt_min=1] ~ ~ ~ scoreboard players test b7s:config_overworld b7s:spawn_z -2147483648
-execute @s[score_b7s:success_cnt_min=1] ~ ~ ~ scoreboard players test b7s:config_overworld b7s:spawn_rot_x -2147483648
-execute @s[score_b7s:success_cnt_min=1] ~ ~ ~ scoreboard players test b7s:config_overworld b7s:spawn_rot_y -2147483648
-scoreboard players tag @s[score_b7s:success_cnt_min=1] add b7s:spawn_set
+scoreboard players tag @s[score_b7s:success_cnt_min=1] add b7s:spawn_pos_set
