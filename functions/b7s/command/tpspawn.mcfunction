@@ -2,6 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+function b7s:entity/get_loc
+function b7s:entity/tagify_loc
+function b7s:entity/back/set_loc
+
 function b7s:entity/get_dim
 function b7s:config/get_spawn
 function b7s:entity/tp_pos
