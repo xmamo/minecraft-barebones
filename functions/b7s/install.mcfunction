@@ -11,6 +11,12 @@
 gamerule commandBlockOutput false
 gamerule logAdminCommands false
 
+scoreboard objectives add b7s:spawn_x dummy
+scoreboard objectives add b7s:spawn_y dummy
+scoreboard objectives add b7s:spawn_z dummy
+scoreboard objectives add b7s:spawn_rot_x dummy
+scoreboard objectives add b7s:spawn_rot_y dummy
+
 scoreboard objectives add b7s:_tmp dummy
 scoreboard objectives add b7s:_left stat.leaveGame
 
@@ -33,6 +39,7 @@ scoreboard objectives add b7s:rot_y dummy
 
 scoreboard objectives add b7s:info trigger
 scoreboard objectives add b7s:sethome trigger
+scoreboard objectives add b7s:tpspawn trigger
 scoreboard objectives add b7s:tphome trigger
 scoreboard objectives add b7s:tpback trigger
 scoreboard objectives add b7s:tpreq trigger

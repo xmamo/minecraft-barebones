@@ -25,6 +25,15 @@ Below are all commands accessible as of the current version.
 ### `/trigger b7s:info set 1`
 Displays basic information about the BareBones data pack.
 
+### `/trigger b7s:tpspawn set 1`
+Teleports you to the spawn location of the current dimension.\
+Administrators can set the spawn location for a specific dimension to their
+current location by executing the following commands:
+```
+/function b7s:entity/get_loc
+/function b7s:config/spawn/set_loc
+```
+
 ### `/trigger b7s:sethome set 1`
 Sets your home location. You can teleport back to it using
 `/trigger b7s:tphome set 1`
