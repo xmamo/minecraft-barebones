@@ -7,7 +7,8 @@ function b7s:entity/get_rot
 function b7s:entity/tagify_loc
 function b7s:entity/back/set_loc
 
-function b7s:config/get_spawn
+function b7s:config/spawn/get_pos
+function b7s:config/spawn/get_rot
 function b7s:entity/tp_pos
 function b7s:entity/tp_loc
 
