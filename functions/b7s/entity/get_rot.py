@@ -14,6 +14,7 @@ print('# b7s:rot_y — the y rotation of the entity')
 print('#')
 print('# Usage:')
 print('# /execute <entity> ~ ~ ~ function b7s:entity/get_rot')
+print()
 
 print()
 for i in range(-90, 91):

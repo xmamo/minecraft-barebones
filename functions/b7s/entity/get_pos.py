@@ -16,26 +16,30 @@ print('#')
 print('# Usage:')
 print('# /execute <entity> ~ ~ ~ function b7s:entity/get_pos')
 print()
+print('scoreboard players tag @s add b7s:_self')
+print()
 print('scoreboard players set @s b7s:x -30000000')
 print('scoreboard players set @s b7s:y -4096')
 print('scoreboard players set @s b7s:z -30000000')
 print()
 print('summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["b7s:_marker"]}')
+print('execute @e[tag=b7s:_marker] ~ ~ ~ function b7s:entity/track_success')
 
 print()
 for exponent in range(25, -1, -1):
-	print('tp @e[tag=b7s:_marker] ~{} ~ ~'.format(-2 ** exponent))
-	print('scoreboard players add @s[score_b7s:success_cnt_min=1] b7s:x {}'.format(2 ** exponent))
+	print('execute @e[tag=b7s:_marker] ~ ~ ~ tp @s ~{} ~ ~'.format(-2 ** exponent))
+	print('execute @e[tag=b7s:_marker,score_b7s:success_cnt_min=1] ~ ~ ~ scoreboard players add @e[tag=b7s:_other] b7s:x {}'.format(2 ** exponent))
 
 print()
 for exponent in range(12, -1, -1):
-	print('tp @e[tag=b7s:_marker] ~ ~{} ~'.format(-2 ** exponent))
-	print('scoreboard players add @s[score_b7s:success_cnt_min=1] b7s:y {}'.format(2 ** exponent))
+	print('execute @e[tag=b7s:_marker] ~ ~ ~ tp @s ~ ~{} ~'.format(-2 ** exponent))
+	print('execute @e[tag=b7s:_marker,score_b7s:success_cnt_min=1] ~ ~ ~ scoreboard players add @e[tag=b7s:_other] b7s:y {}'.format(2 ** exponent))
 
 print()
 for exponent in range(25, -1, -1):
-	print('tp @e[tag=b7s:_marker] ~ ~ ~{}'.format(-2 ** exponent))
-	print('scoreboard players add @s[score_b7s:success_cnt_min=1] b7s:z {}'.format(2 ** exponent))
+	print('execute @e[tag=b7s:_marker] ~ ~ ~ tp @s ~ ~ ~{}'.format(-2 ** exponent))
+	print('execute @e[tag=b7s:_marker,score_b7s:success_cnt_min=1] ~ ~ ~ scoreboard players add @e[tag=b7s:_other] b7s:z {}'.format(2 ** exponent))
 
 print()
 print('kill @e[tag=b7s:_marker]')
+print('scoreboard players tag @s remove b7s:_self')
