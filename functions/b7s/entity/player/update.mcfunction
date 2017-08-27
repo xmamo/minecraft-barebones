@@ -8,8 +8,7 @@
 
 function b7sp:entity/player/pre_update
 
-scoreboard players reset @s[score_b7s:_left_min=1] b7s:req_from
-scoreboard players reset @s[score_b7s:_left_min=1] b7s:_left
+function b7s:entity/player/update/_if_left if @s[score_b7s:_left_min=1]
 
 function b7s:entity/track_success_cnt unless @s[score_b7s:success_cnt_min=-2147483648]
 function b7s:entity/track_aff_blocks unless @s[score_b7s:aff_blocks_min=-2147483648]

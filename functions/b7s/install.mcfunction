@@ -8,41 +8,6 @@
 # Usage:
 # /function b7s:install
 
-gamerule commandBlockOutput false
-gamerule logAdminCommands false
-
-scoreboard objectives add b7s:spawn_x dummy
-scoreboard objectives add b7s:spawn_y dummy
-scoreboard objectives add b7s:spawn_z dummy
-scoreboard objectives add b7s:spawn_rot_x dummy
-scoreboard objectives add b7s:spawn_rot_y dummy
-
-scoreboard objectives add b7s:_tmp dummy
-scoreboard objectives add b7s:_left stat.leaveGame
-
-scoreboard objectives add b7s:aff_blocks dummy
-scoreboard objectives add b7s:aff_entities dummy
-scoreboard objectives add b7s:aff_items dummy
-scoreboard objectives add b7s:query_result dummy
-scoreboard objectives add b7s:success_cnt dummy
-
-scoreboard objectives add b7s:id dummy
-scoreboard objectives add b7s:biome dummy
-scoreboard objectives add b7s:req_from dummy
-
-scoreboard objectives add b7s:dim dummy
-scoreboard objectives add b7s:x dummy
-scoreboard objectives add b7s:y dummy
-scoreboard objectives add b7s:z dummy
-scoreboard objectives add b7s:rot_x dummy
-scoreboard objectives add b7s:rot_y dummy
-
-scoreboard objectives add b7s:info trigger
-scoreboard objectives add b7s:sethome trigger
-scoreboard objectives add b7s:tpspawn trigger
-scoreboard objectives add b7s:tphome trigger
-scoreboard objectives add b7s:tpback trigger
-scoreboard objectives add b7s:tpreq trigger
-scoreboard objectives add b7s:tpaccept trigger
-
-scoreboard objectives setdisplay list b7s:id
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["b7s:_installer"]}
+execute @e[tag=b7s:_installer] ~ ~ ~ function b7s:install/_as_installer
+kill @e[tag=b7s:_installer]
