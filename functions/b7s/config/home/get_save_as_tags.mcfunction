@@ -3,5 +3,5 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 scoreboard players tag @s remove b7s:home_as_tags
-scoreboard players test b7s:config b7s:home_as_tags 1
-scoreboard players tag @s[score_b7s:success_cnt_min=1] add b7s:home_as_tags
+scoreboard players operation @s b7s:home_as_tags = b7s:config b7s:home_as_tags
+scoreboard players tag @s[score_b7s:home_as_tags_min=1] add b7s:home_as_tags
