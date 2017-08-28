@@ -9,8 +9,8 @@
 # Usage:
 # execute <entity> ~ ~ ~ function b7s:entity/pulse
 
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["b7s:_tmp"]}
-execute @e[tag=b7s:_tmp] ~ ~ ~ function b7s:entity/track_success_cnt
-execute @e[tag=b7s:_tmp] ~ ~ ~ fill ~ ~ ~ ~ ~ ~ minecraft:redstone_block 0 replace minecraft:air
-execute @e[tag=b7s:_tmp,score_b7s:success_cnt_min=1] ~ ~ ~ setblock ~ ~ ~ minecraft:air
-kill @e[tag=b7s:_tmp]
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["b7s:_pulser"]}
+execute @e[tag=b7s:_pulser] ~ ~ ~ function b7s:entity/track_success_cnt
+execute @e[tag=b7s:_pulser] ~ ~ ~ fill ~ ~ ~ ~ ~ ~ minecraft:redstone_block 0 replace minecraft:air
+execute @e[tag=b7s:_pulser,score_b7s:success_cnt_min=1] ~ ~ ~ setblock ~ ~ ~ minecraft:air
+kill @e[tag=b7s:_pulser]
