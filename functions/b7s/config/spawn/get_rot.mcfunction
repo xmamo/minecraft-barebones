@@ -8,8 +8,8 @@
 # b7s:dim — the dimension for which to get the spawn rotation
 #
 # Scores set:
-# b7s:rot_x — the x rotation of the spawn
-# b7s:rot_y — the y rotation of the spawn
+# b7s:rot_x — to the spawn's x rotation
+# b7s:rot_y — to the spawn's y rotation
 #
 # Usage:
 # /scoreboard players set @s b7s:dim <dim>

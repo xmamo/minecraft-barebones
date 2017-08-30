@@ -6,11 +6,11 @@
 #
 # Scores required:
 # b7s:dim — the dimension for which to set the spawn location
-# b7s:x — the x coordinate of the spawn
-# b7s:y — the y coordinate of the spawn
-# b7s:z — the z coordinate of the spawn
-# b7s:rot_x — the x rotation of the spawn
-# b7s:rot_y — the y rotation of the spawn
+# b7s:x — the spawn's x coordinate
+# b7s:y — the spawn's y coordinate
+# b7s:z — the spawn's z coordinate
+# b7s:rot_x — the spawn's x rotation
+# b7s:rot_y — the spawn's y rotation
 #
 # Usage:
 # /scoreboard players set @s b7s:dim <dim>
