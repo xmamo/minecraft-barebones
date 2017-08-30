@@ -21,6 +21,7 @@
 # /scoreboard players set <entity> b7s:rot_y <rot_y>
 # /execute <entity> ~ ~ ~ function b7s:entity/home/set_loc
 
-function b7s:entity/home/set_dim
-function b7s:entity/home/set_pos
-function b7s:entity/home/set_rot
+function b7s:config/home/get_save_as_tags
+function b7s:entity/home/set_dim/_perform
+function b7s:entity/home/set_pos/_perform
+function b7s:entity/home/set_rot/_perform
