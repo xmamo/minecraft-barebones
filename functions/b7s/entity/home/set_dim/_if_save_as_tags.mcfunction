@@ -10,4 +10,4 @@ scoreboard players tag @s[score_b7s:dim_min=-1,score_b7s:dim=-1] add b7s:home_di
 scoreboard players tag @s[score_b7s:dim_min=0,score_b7s:dim=0] add b7s:home_dim_overworld
 scoreboard players tag @s[score_b7s:dim_min=1,score_b7s:dim=1] add b7s:home_dim_end
 
-scoreboard players tag @s add b7s:home_dim_set
+scoreboard players tag @s add b7s:home_dim_tags_set

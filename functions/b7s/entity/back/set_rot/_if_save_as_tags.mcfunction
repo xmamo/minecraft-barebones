@@ -59,4 +59,4 @@ scoreboard players tag @s[score_b7s:_tmp_min=2] add b7s:back_rot_y_1
 scoreboard players remove @s[score_b7s:_tmp_min=2] b7s:_tmp 2
 scoreboard players tag @s[score_b7s:_tmp_min=1] add b7s:back_rot_y_0
 
-scoreboard players tag @s add b7s:back_rot_set
+scoreboard players tag @s add b7s:back_rot_tags_set

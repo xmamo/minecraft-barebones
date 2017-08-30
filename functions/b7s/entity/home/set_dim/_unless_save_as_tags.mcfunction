@@ -3,3 +3,5 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 scoreboard players operation @s b7s:home_dim = @s b7s:dim
+
+scoreboard players tag @s remove b7s:home_dim_tags_set

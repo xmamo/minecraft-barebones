@@ -3,5 +3,5 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 scoreboard players tag @s remove b7s:persist_back
-scoreboard players test b7s:config b7s:persist_back 1
-scoreboard players tag @s[score_b7s:success_cnt_min=1] add b7s:persist_back
+scoreboard players operation @s b7s:persist_back = b7s:config b7s:persist_back
+scoreboard players tag @s[score_b7s:persist_back_min=1] add b7s:persist_back

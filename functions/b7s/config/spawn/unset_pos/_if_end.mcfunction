@@ -2,5 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-function b7s:entity/back/get_dim/_unless_set_as_tags unless @s[tag=b7s:back_dim_tags_set]
-function b7s:entity/back/get_dim/_if_set_as_tags if @s[tag=b7s:back_dim_tags_set]
+scoreboard players reset b7s:config_end b7s:spawn_x
+scoreboard players reset b7s:config_end b7s:spawn_y
+scoreboard players reset b7s:config_end b7s:spawn_z

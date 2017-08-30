@@ -2,5 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-scoreboard players tag @s remove b7s:home_dim_set
-execute @s[score_b7s:home_dim_min=-2147483648] ~ ~ ~ scoreboard players tag @s add b7s:home_dim_set
+scoreboard players reset b7s:config_nether b7s:spawn_x
+scoreboard players reset b7s:config_nether b7s:spawn_y
+scoreboard players reset b7s:config_nether b7s:spawn_z

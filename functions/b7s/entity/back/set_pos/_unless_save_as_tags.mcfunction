@@ -5,3 +5,5 @@
 scoreboard players operation @s b7s:back_x = @s b7s:x
 scoreboard players operation @s b7s:back_y = @s b7s:y
 scoreboard players operation @s b7s:back_z = @s b7s:z
+
+scoreboard players tag @s remove b7s:back_pos_tags_set

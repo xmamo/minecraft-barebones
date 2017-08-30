@@ -4,3 +4,5 @@
 
 scoreboard players operation @s b7s:home_rot_x = @s b7s:rot_x
 scoreboard players operation @s b7s:home_rot_y = @s b7s:rot_y
+
+scoreboard players tag @s remove b7s:home_rot_tags_set
