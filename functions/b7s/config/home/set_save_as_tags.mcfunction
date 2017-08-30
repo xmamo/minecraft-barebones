@@ -10,8 +10,8 @@
 # b7s:home_as_tags — if the player's home location should be saved as tags
 #
 # Usage:
-# scoreboard players tag @s <add|remove> b7s:home_as_tags
-# function b7s:config/home/set_save_as_tags
+# /scoreboard players tag @s <add|remove> b7s:home_as_tags
+# /function b7s:config/home/set_save_as_tags
 
 scoreboard players set b7s:config b7s:home_as_tags 0
 execute @s[tag=b7s:home_as_tags] ~ ~ ~ scoreboard players set b7s:config b7s:home_as_tags 1

@@ -8,7 +8,7 @@
 # b7s:back_as_tags — if the player's back location should saved using tags
 #
 # Usage:
-# function b7s:config/home/get_back_as_tags
+# /function b7s:config/home/get_back_as_tags
 
 scoreboard players tag @s remove b7s:back_as_tags
 scoreboard players operation @s b7s:back_as_tags = b7s:config b7s:back_as_tags

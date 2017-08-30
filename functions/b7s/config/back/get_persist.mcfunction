@@ -9,7 +9,7 @@
 # b7s:persist_back — if the player's back location should be kept saved
 #
 # Usage:
-# function b7s:config/back/get_persist
+# /function b7s:config/back/get_persist
 
 scoreboard players tag @s remove b7s:persist_back
 scoreboard players operation @s b7s:persist_back = b7s:config b7s:persist_back
