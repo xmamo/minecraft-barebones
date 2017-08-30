@@ -2,6 +2,19 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Checks whether the server's spawn position has been set in a specific
+# dimension.
+#
+# Scores required:
+# b7s:dim — the dimension in which to perform the check
+#
+# Tags set:
+# b7s:spawn_pos_set — if the spawn position was set in the selected dimension
+#
+# Usage:
+# /scoreboard players set @s b7s:dim <dim>
+# /function b7s:config/spawn/check_pos_set
+
 scoreboard players tag @s remove b7s:spawn_pos_set
 
 scoreboard players reset @s b7s:spawn_x

@@ -2,6 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Checks whether a player or entity has its home location set.
+#
+# Tags set:
+# b7s:home_loc_set — if the home location was set
+#
+# Usage:
+# /execute <entity> ~ ~ ~ function b7s:entity/home/check_loc_set
+
 scoreboard players tag @s remove b7s:home_loc_set
 function b7s:entity/home/check_dim_set
 function b7s:entity/home/check_pos_set
