@@ -43,4 +43,4 @@ for exponent in range(25, -1, -1):
 		print('scoreboard players remove @s[score_b7s:_tmp_min={0}] b7s:_tmp {0}'.format(2 ** exponent))
 
 print()
-print('scoreboard players tag @s add b7s:back_pos_set')
+print('scoreboard players tag @s add b7s:back_pos_tags_set')
