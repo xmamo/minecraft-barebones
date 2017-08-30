@@ -20,13 +20,14 @@ extend the server's functionality.
 
 ## Commands
 BareBones installs a series of custom commands, accessible through triggers.
-Below are all commands accessible as of the current version.
+Below are all the available commands as of the current version.
 
 ### `/trigger b7s:info set 1`
 Displays basic information about the BareBones data pack.
 
 ### `/trigger b7s:tpspawn set 1`
-Teleports you to the spawn location of the current dimension.\
+Teleports you to the server's spawn location. Each dimension may have a
+different spawn location.\
 Administrators can set the spawn location for a specific dimension to their
 current location by executing the following commands:
 ```

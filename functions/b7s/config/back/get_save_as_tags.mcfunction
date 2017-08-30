@@ -11,5 +11,5 @@
 # /function b7s:config/home/get_back_as_tags
 
 scoreboard players tag @s remove b7s:back_as_tags
-scoreboard players operation @s b7s:back_as_tags = b7s:config b7s:back_as_tags
+scoreboard players operation @s b7s:back_as_tags = #b7s:config b7s:back_as_tags
 scoreboard players tag @s[score_b7s:back_as_tags_min=1] add b7s:back_as_tags

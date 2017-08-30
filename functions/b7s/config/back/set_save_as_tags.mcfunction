@@ -13,4 +13,4 @@
 # /function b7s:config/back/set_save_as_tags
 
 scoreboard players set b7s:config b7s:back_as_tags 0
-execute @s[tag=b7s:back_as_tags] ~ ~ ~ scoreboard players set b7s:config b7s:back_as_tags 1
+execute @s[tag=b7s:back_as_tags] ~ ~ ~ scoreboard players set #b7s:config b7s:back_as_tags 1

@@ -17,8 +17,8 @@ function b7s:entity/track_aff_items unless @s[score_b7s:aff_items_min=-214748364
 function b7s:entity/track_query_result unless @s[score_b7s:query_result_min=-2147483648]
 
 scoreboard players add @s b7s:id 0
-execute @s[score_b7s:id=0] ~ ~ ~ scoreboard players add b7s:_dummy b7s:id 1
-scoreboard players operation @s[score_b7s:id=0] b7s:id = b7s:_dummy b7s:id
+execute @s[score_b7s:id=0] ~ ~ ~ scoreboard players add #b7s:_dummy b7s:id 1
+scoreboard players operation @s[score_b7s:id=0] b7s:id = #b7s:_dummy b7s:id
 
 execute @s[tag=!b7s:initialized] ~ ~ ~ function b7sp:entity/player/welcome
 scoreboard players tag @s[tag=!b7s:initialized] add b7s:initialized

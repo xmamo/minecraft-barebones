@@ -20,16 +20,16 @@ scoreboard objectives add b7s:spawn_rot_x dummy
 scoreboard objectives add b7s:spawn_rot_y dummy
 
 scoreboard objectives add b7s:home_as_tags dummy
-scoreboard players test b7s:config b7s:home_as_tags *
-execute @s[score_b7s:success_cnt=0] ~ ~ ~ scoreboard players set b7s:config b7s:home_as_tags 1
+scoreboard players test #b7s:config b7s:home_as_tags *
+execute @s[score_b7s:success_cnt=0] ~ ~ ~ scoreboard players set #b7s:config b7s:home_as_tags 1
 
 scoreboard objectives add b7s:back_as_tags dummy
-scoreboard players test b7s:config b7s:back_as_tags *
-execute @s[score_b7s:success_cnt=0] ~ ~ ~ scoreboard players set b7s:config b7s:back_as_tags 0
+scoreboard players test #b7s:config b7s:back_as_tags *
+execute @s[score_b7s:success_cnt=0] ~ ~ ~ scoreboard players set #b7s:config b7s:back_as_tags 0
 
 scoreboard objectives add b7s:persist_back dummy
-scoreboard players test b7s:config b7s:persist_back *
-execute @s[score_b7s:success_cnt=0] ~ ~ ~ scoreboard players set b7s:config b7s:persist_back 0
+scoreboard players test #b7s:config b7s:persist_back *
+execute @s[score_b7s:success_cnt=0] ~ ~ ~ scoreboard players set #b7s:config b7s:persist_back 0
 
 scoreboard objectives add b7s:_tmp dummy
 scoreboard objectives add b7s:_left stat.leaveGame
