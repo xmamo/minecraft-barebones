@@ -2,13 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This function is designed to be called automatically by players once every second, using custom advancements provided
-# by BareBones. Avoid calling this function by your own.
+# This function is designed to be called automatically by players once every
+# second, using custom advancements provided by BareBones. Avoid calling this
+# function by your own.
 
 function b7sp:entity/player/pre_update
 
-scoreboard players reset @s[score_b7s:_left_min=1] b7s:req_from
-scoreboard players reset @s[score_b7s:_left_min=1] b7s:_left
+function b7s:entity/player/update/_if_left if @s[score_b7s:_left_min=1]
 
 function b7s:entity/track_success_cnt unless @s[score_b7s:success_cnt_min=-2147483648]
 function b7s:entity/track_aff_blocks unless @s[score_b7s:aff_blocks_min=-2147483648]
@@ -17,8 +17,8 @@ function b7s:entity/track_aff_items unless @s[score_b7s:aff_items_min=-214748364
 function b7s:entity/track_query_result unless @s[score_b7s:query_result_min=-2147483648]
 
 scoreboard players add @s b7s:id 0
-execute @s[score_b7s:id=0] ~ ~ ~ scoreboard players add b7s:_dummy b7s:id 1
-scoreboard players operation @s[score_b7s:id=0] b7s:id = b7s:_dummy b7s:id
+execute @s[score_b7s:id=0] ~ ~ ~ scoreboard players add #b7s:_dummy b7s:id 1
+scoreboard players operation @s[score_b7s:id=0] b7s:id = #b7s:_dummy b7s:id
 
 execute @s[tag=!b7s:initialized] ~ ~ ~ function b7sp:entity/player/welcome
 scoreboard players tag @s[tag=!b7s:initialized] add b7s:initialized

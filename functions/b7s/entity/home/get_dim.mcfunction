@@ -2,10 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-scoreboard players tag @s remove b7s:dim_nether
-scoreboard players tag @s remove b7s:dim_overworld
-scoreboard players tag @s remove b7s:dim_end
+# Gets the home dimension of a player or entity.
+#
+# Scores set:
+# b7s:dim — to the home's dimension
+#
+# Usage:
+# /execute <entity> ~ ~ ~ function b7s:entity/home/get_dim
 
-scoreboard players tag @s[tag=b7s:home_dim_nether] add b7s:dim_nether
-scoreboard players tag @s[tag=b7s:home_dim_overworld] add b7s:home_dim_overworld
-scoreboard players tag @s[tag=b7s:home_dim_end] add b7s:dim_end
+function b7s:entity/home/get_dim/_unless_set_as_tags unless @s[tag=b7s:home_dim_tags_set]
+function b7s:entity/home/get_dim/_if_set_as_tags if @s[tag=b7s:home_dim_tags_set]

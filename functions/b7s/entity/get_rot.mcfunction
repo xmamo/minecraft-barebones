@@ -5,8 +5,8 @@
 # Gets the rotation of a player or entity.
 #
 # Scores set:
-# b7s:rot_x — the x rotation of the entity
-# b7s:rot_y — the y rotation of the entity
+# b7s:rot_x — the entity's x rotation
+# b7s:rot_y — the entity's y rotation
 #
 # Usage:
 # /execute <entity> ~ ~ ~ function b7s:entity/get_rot

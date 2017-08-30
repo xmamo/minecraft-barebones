@@ -5,12 +5,12 @@
 # Gets the dimension, position and rotation of a player or entity.
 #
 # Scores set:
-# b7s:dim — the dimension of the entity. Nether = -1, Overworld = 0, End = 1
-# b7s:x — the x coordinate of the entity
-# b7s:y — the y coordinate of the entity
-# b7s:z — the z coordinate of the entity
-# b7s:rot_x — the x rotation of the entity
-# b7s:rot_y — the y rotation of the entity
+# b7s:dim — the entity's dimension. Nether = -1, Overworld = 0, End = 1
+# b7s:x — the entity's x coordinate
+# b7s:y — the entity's y coordinate
+# b7s:z — the entity's z coordinate
+# b7s:rot_x — the entity's x rotation
+# b7s:rot_y — the entity's y rotation
 #
 # Usage:
 # /execute <entity> ~ ~ ~ function b7s:entity/get_loc

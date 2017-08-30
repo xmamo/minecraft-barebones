@@ -3,7 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 execute @p[tag=b7s:_other] ~ ~ ~ function b7s:entity/get_loc
-execute @p[tag=b7s:_other] ~ ~ ~ function b7s:entity/tagify_loc
 execute @p[tag=b7s:_other] ~ ~ ~ function b7s:entity/back/set_loc
 
 tp @p[tag=b7s:_other] @s

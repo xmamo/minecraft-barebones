@@ -3,7 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 function b7s:entity/get_loc
-function b7s:entity/tagify_loc
 function b7s:entity/home/set_loc
 
 tellraw @s ["[BareBones] ",{"color":"green","text":"Home set"}]

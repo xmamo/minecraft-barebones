@@ -2,10 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-scoreboard players tag @s remove b7s:back_dim_nether
-scoreboard players tag @s remove b7s:back_dim_overworld
-scoreboard players tag @s remove b7s:back_dim_end
+# Sets the back dimension of a player or entity.
+#
+# Scores required:
+# b7s:dim — the back's dimension
+#
+# Usage:
+# /scoreboard players set <entity> b7s:dim <dim>
+# /execute <entity> ~ ~ ~ function b7s:entity/back/set_dim
 
-scoreboard players tag @s[tag=b7s:dim_nether] add b7s:back_dim_nether
-scoreboard players tag @s[tag=b7s:dim_overworld] add b7s:back_dim_overworld
-scoreboard players tag @s[tag=b7s:dim_end] add b7s:back_dim_end
+function b7s:config/back/get_save_as_tags
+function b7s:entity/back/set_dim/_perform
