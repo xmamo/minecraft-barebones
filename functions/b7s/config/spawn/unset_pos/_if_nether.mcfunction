@@ -2,6 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-scoreboard players reset b7s:config_nether b7s:spawn_x
-scoreboard players reset b7s:config_nether b7s:spawn_y
-scoreboard players reset b7s:config_nether b7s:spawn_z
+scoreboard players reset #b7s:config_nether b7s:spawn_x
+scoreboard players reset #b7s:config_nether b7s:spawn_y
+scoreboard players reset #b7s:config_nether b7s:spawn_z

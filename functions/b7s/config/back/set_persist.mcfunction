@@ -13,4 +13,4 @@
 # /function b7s:config/back/set_persist
 
 scoreboard players set b7s:config b7s:persist_back 0
-execute @s[tag=b7s:persist_back] ~ ~ ~ scoreboard players set b7s:config b7s:persist_back 1
+execute @s[tag=b7s:persist_back] ~ ~ ~ scoreboard players set #b7s:config b7s:persist_back 1
