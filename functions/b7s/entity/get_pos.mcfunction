@@ -5,9 +5,9 @@
 # Gets the position of a player or entity.
 #
 # Scores set:
-# b7s:x — the x coordinate of the entity
-# b7s:y — the y coordinate of the entity
-# b7s:z — the z coordinate of the entity
+# b7s:x — the entity's x coordinate
+# b7s:y — the entity's y coordinate
+# b7s:z — the entity's z coordinate
 #
 # Usage:
 # /execute <entity> ~ ~ ~ function b7s:entity/get_pos

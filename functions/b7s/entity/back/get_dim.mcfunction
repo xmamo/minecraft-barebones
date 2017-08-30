@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# Gets the back dimension for a specific entity.
+# Gets the back dimension of a player or entity.
 #
 # Scores set:
 # b7s:dim — to the back's dimension

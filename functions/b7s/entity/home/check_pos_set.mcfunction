@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# Checks whether the home position has been set for a specific entity.
+# Checks whether a player or entity has its home position set.
 #
 # Tags set:
 # b7s:home_pos_set — if the home position was set

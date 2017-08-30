@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# Sets the home position for a specific entity.
+# Sets the home position of a player or entity.
 #
 # Scores required:
 # b7s:x — the home's x coordinate
