@@ -2,6 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Checks whether the back location has been set for a specific entity.
+#
+# Tags set:
+# b7s:back_loc_set — if the back location was set
+#
+# Usage:
+# /execute <entity> ~ ~ ~ function b7s:entity/back/check_loc_set
+
 scoreboard players tag @s remove b7s:back_loc_set
 function b7s:entity/back/check_dim_set
 function b7s:entity/back/check_pos_set

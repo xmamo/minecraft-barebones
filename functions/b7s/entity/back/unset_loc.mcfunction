@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Unsets the back location for a specific entity.
+#
+# Usage:
+# /execute <entity> ~ ~ ~ function b7s:entity/back/unset_loc
+
 function b7s:entity/back/unset_dim
 function b7s:entity/back/unset_pos
 function b7s:entity/back/unset_rot
