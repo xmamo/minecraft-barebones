@@ -49,6 +49,9 @@ scoreboard objectives add b7s:x_in_chunk dummy
 scoreboard objectives add b7s:y_in_chunk dummy
 scoreboard objectives add b7s:z_in_chunk dummy
 
+scoreboard objectives add b7s:block_id dummy
+scoreboard objectives add b7s:block_dv dummy
+
 scoreboard objectives add b7s:home_dim dummy
 scoreboard objectives add b7s:home_x dummy
 scoreboard objectives add b7s:home_y dummy
