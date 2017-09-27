@@ -5,8 +5,8 @@
 # Teleports a player or entity to a given rotation.
 #
 # Scores required:
-# b7s:rot_x — the new x rotation for the entity
-# b7s:rot_y — the new y rotation for the entity
+# b7s:rot_x — the new x rotation for the entity.
+# b7s:rot_y — the new y rotation for the entity.
 #
 # Usage:
 # /scoreboard players set <entity> b7s:rot_x <rot_x>
