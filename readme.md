@@ -6,16 +6,30 @@ of triggers and contains a useful function API which can be used to further
 extend the server's functionality.
 
 ## Installation
-1. Download the BareBones zip folder from
-   [here](https://github.com/xMamo/Minecraft-BareBones/releases/latest) and
-   extract it;
+### For Minecraft 1.13+
+1. Download the latest BareBones release from
+   [here](https://github.com/xMamo/Minecraft-BareBones/releases/latest);
+2. Move the downloaded archive into your world's `datapacks` folder;
+3. Log into your server and execute the following commands:
+   ```
+   /reload
+   /function b7s:install
+   ```
+4. Enjoy!
+
+### For Minecraft 1.12
+1. Download the BareBones zip from
+   [here](https://github.com/xMamo/Minecraft-BareBones/releases/tag/v0.3-mc1.12)
+   and extract it;
 2. Move the `functions` folder from the extracted directory into the `data`
    folder of the server's world;
-3. Log into your server and execute the commands `/reload` and
-   `/function b7s:install`;
-4. Move the `advancements` folder from the extracted directory into the `data`
+3. Move the `advancements` folder from the extracted directory into the `data`
    folder of the server's world;
-5. Execute a `/reload` once again;
+4. Log into your server and execute the following commands:
+   ```
+   /reload
+   /function b7s:install
+   ```
 6. Enjoy!
 
 ## Commands
