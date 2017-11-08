@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"b7s:impossible": {
+		"b7s:_root": {
 			"trigger": "minecraft:impossible"
 		}
 	}
