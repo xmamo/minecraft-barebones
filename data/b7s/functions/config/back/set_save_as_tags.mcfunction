@@ -3,14 +3,14 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Configures whether the player's back location should be saved using scores
-# or tags. Scores are used by default.
+# or tags. By default, scores are used.
 #
-# Tags required:
-# b7s:back_as_tags — if the player's back location should be saved as tags
+# Scores required:
+# b7s.val - to 1 if the back location should be saved as tags, 0 otherwise
 #
 # Usage:
-# /scoreboard players tag @s <add|remove> b7s:back_as_tags
+# /scoreboard players set @s b7s.val (0|1)
 # /function b7s:config/back/set_save_as_tags
 
-scoreboard players set b7s:config b7s:back_as_tags 0
-execute @s[tag=b7s:back_as_tags] ~ ~ ~ scoreboard players set #b7s:config b7s:back_as_tags 1
+scoreboard players set #b7s.save_back_as_tags b7s.val 0
+execute unless score @s b7s.val matches 0 run scoreboard players set #b7s.save_back_as_tags b7s.val 1

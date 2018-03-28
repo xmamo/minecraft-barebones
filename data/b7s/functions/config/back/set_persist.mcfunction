@@ -5,12 +5,12 @@
 # Configures whether the player's back location should be kept saved even
 # after logout. By default, this is not true.
 #
-# Tags required:
-# b7s:persist_back — if the player's back location should be kept saved
+# Scores required:
+# b7s.val - to 1 if the back location should be kept saved, 0 otherwise
 #
 # Usage:
-# /scoreboard players tag @s <add|remove> b7s:persist_back
+# /scoreboard players set @s b7s.val (0|1)
 # /function b7s:config/back/set_persist
 
-scoreboard players set b7s:config b7s:persist_back 0
-execute @s[tag=b7s:persist_back] ~ ~ ~ scoreboard players set #b7s:config b7s:persist_back 1
+scoreboard players set #b7s.persist_back b7s.val 0
+execute unless score @s b7s.val matches 0 run scoreboard players set #b7s.persist_back b7s.val 1
