@@ -32,6 +32,6 @@ execute store result entity @e[tag=b7s._teleporter,limit=1] Rotation[0] float 1 
 execute store result entity @e[tag=b7s._teleporter,limit=1] Rotation[1] float 1 run scoreboard players get @s[scores={b7s.rot_y=-2147483648..}] b7s.rot_y
 
 teleport @e[tag=b7s._teleporter,limit=1]
-teleport ~.5 ~ ~.5
+execute at @s run teleport ~.5 ~ ~.5
 
 kill @e[tag=b7s._teleporter]
