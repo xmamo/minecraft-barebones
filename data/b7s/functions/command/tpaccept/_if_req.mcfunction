@@ -8,7 +8,5 @@ execute as @e[type=minecraft:player] if score @s b7s.id = @p[tag=b7s._self] b7s.
 execute if entity @p[tag=b7s._other] run function b7s:command/tpaccept/_if_req_if_other
 execute unless entity @p[tag=b7s._other] run tellraw @s ["[Barebones] ",{"color":"red","text":"Teleportation request expired"}]
 
-scoreboard players reset @s b7s.tp_req_from
-
 tag @s remove b7s._self
 tag @p[tag=b7s._other] remove b7s._other
