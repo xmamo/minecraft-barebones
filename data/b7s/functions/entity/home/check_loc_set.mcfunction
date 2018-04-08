@@ -4,14 +4,12 @@
 
 # Checks whether a player or entity has its home location set.
 #
-# Tags set:
-# b7s:home_loc_set — if the home location was set
+# Scores set:
+# b7s.val - to 1 if the home location was set, 0 otherwise
 #
 # Usage:
-# /execute <entity> ~ ~ ~ function b7s:entity/home/check_loc_set
+# /execute as <entity> run function b7s:entity/home/check_loc_set
 
-scoreboard players tag @s remove b7s:home_loc_set
-function b7s:entity/home/check_dim_set
-function b7s:entity/home/check_pos_set
-function b7s:entity/home/check_rot_set
-execute @s[tag=b7s:home_dim_set] ~ ~ ~ execute @s[tag=b7s:home_pos_set] ~ ~ ~ scoreboard players tag @s[tag=b7s:home_rot_set] add b7s:home_loc_set
+scoreboard players set @s b7s.val 0
+scoreboard players set @s[tag=b7s.home_loc_set,tag=b7s.home_dim_set,tag=b7s.home_x_set,tag=b7s.home_y_set,tag=b7s.home_z_set] b7s.val 1
+scoreboard players set @s[tag=!b7s.home_loc_set,scores={b7s.home_dim=-2147483648..,b7s.home_x=-2147483648..b7s.home_y=-2147483648..b7s.home_z=-2147483648..}] b7s.val 1

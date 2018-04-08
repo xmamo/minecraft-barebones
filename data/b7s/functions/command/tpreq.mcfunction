@@ -2,14 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-scoreboard players tag @s add b7s:_self
+tag @s add b7s._self
+execute as @e[type=minecraft:player] if score @s b7s.id = @p[tag=b7s._self] b7s.tpreq run tag @s add b7s._other
 
-execute @e[type=minecraft:player] ~ ~ ~ scoreboard players operation @s b7s:_tmp = @s b7s:id
-scoreboard players operation @e[type=minecraft:player] b7s:_tmp -= @s b7s:tpreq
-scoreboard players tag @p[score_b7s:_tmp_min=0,score_b7s:_tmp=0] add b7s:_other
+execute if entity @p[tag=b7s._other] run function b7s:command/tpreq/_if_other
+execute unless entity @p[tag=b7s._other] run tellraw @s ["[Barebones] ",{"color":"red","text":"There is no such player"}]
 
-function b7s:command/tpreq/_unless_other unless @p[tag=b7s:_other]
-function b7s:command/tpreq/_if_other if @p[tag=b7s:_other]
-
-scoreboard players tag @s remove b7s:_self
-scoreboard players tag @p[tag=b7s:_other] remove b7s:_other
+tag @s remove b7s._self
+tag @p[tag=b7s._other] remove b7s._other
