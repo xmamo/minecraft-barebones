@@ -2,8 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-function b7s:entity/get_dim
-function b7s:config/spawn/check_loc_set
+scoreboard players operation @s b7s._val = @s b7s.val
 
-tellraw @s[tag=!b7s:spawn_pos_set] ["[BareBones] ",{"color":"red","text":"No spawn location has been set"}]
-function b7s:command/tpspawn/_if_spawn_set if @s[tag=b7s:spawn_pos_set]
+function b7s:config/spawn/check_loc_set
+execute unless score @s b7s.val matches 0 run function b7s:command/tpspawn/_if_spawn_loc_set
+tellraw @s[scores={b7s.val=0}] ["[Barebones] ",{"color":"red","text":"No spawn location has been set"}]
+
+scoreboard players operation @s b7s.val = @s b7s._val

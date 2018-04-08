@@ -5,23 +5,26 @@
 # Sets the home location of a player or entity.
 #
 # Scores required:
-# b7s:dim — the home's dimension
-# b7s:x — the home's x coordinate
-# b7s:y — the home's y coordinate
-# b7s:z — the home's z coordinate
-# b7s:rot_x — the home's x rotation
-# b7s:rot_y — the home's y rotation
+# b7s.dim - the dimension of the home location
+# b7s.x - the x coordinate of the home location
+# b7s.y - the y coordinate of the home location
+# b7s.z - the z coordinate of the home location
+# b7s.rot_x - the x rotation of the home location
+# b7s.rot_y - the y rotation of the home location
 #
 # Usage:
-# /scoreboard players set <entity> b7s:dim <dim>
-# /scoreboard players set <entity> b7s:x <x>
-# /scoreboard players set <entity> b7s:y <y>
-# /scoreboard players set <entity> b7s:z <z>
-# /scoreboard players set <entity> b7s:rot_x <rot_x>
-# /scoreboard players set <entity> b7s:rot_y <rot_y>
-# /execute <entity> ~ ~ ~ function b7s:entity/home/set_loc
+# /scoreboard players set <entity> b7s.dim <dim>
+# /scoreboard players set <entity> b7s.x <x>
+# /scoreboard players set <entity> b7s.y <y>
+# /scoreboard players set <entity> b7s.z <z>
+# /scoreboard players set <entity> b7s.rot_x <rot_x>
+# /scoreboard players set <entity> b7s.rot_y <rot_y>
+# /execute as <entity> run function b7s:entity/home/set_loc
+
+scoreboard players operation @s b7s._val = @s b7s.val
 
 function b7s:config/home/get_save_as_tags
-function b7s:entity/home/set_dim/_perform
-function b7s:entity/home/set_pos/_perform
-function b7s:entity/home/set_rot/_perform
+execute if score @s b7s.val matches 1 run function b7s:entity/home/set_loc/_if_save_as_tags
+execute unless score @s b7s.val matches 1 run function b7s:entity/home/set_loc/_unless_save_as_tags
+
+scoreboard players operation @s b7s.val = @s b7s._val

@@ -4,12 +4,11 @@
 
 # Checks whether the player's back location should saved using scores or tags.
 #
-# Tags set:
-# b7s:back_as_tags — if the player's back location should saved using tags
+# Scores set:
+# b7s.val - to 1 if the back location should be saved using tags, 0 otherwise
 #
 # Usage:
-# /function b7s:config/home/get_back_as_tags
+# /function b7s:config/back/get_save_as_tags
 
-scoreboard players tag @s remove b7s:back_as_tags
-scoreboard players operation @s b7s:back_as_tags = #b7s:config b7s:back_as_tags
-scoreboard players tag @s[score_b7s:back_as_tags_min=1] add b7s:back_as_tags
+scoreboard players set @s b7s.val 0
+execute unless score #b7s.save_back_as_tags b7s.val matches 0 run scoreboard players set @s b7s.val 1

@@ -6,12 +6,12 @@
 # or tags. While tags persist after players change their IGN, scores don't.
 # For this reason, tags are used by default.
 #
-# Tags required:
-# b7s:home_as_tags — if the player's home location should be saved as tags
+# Scores required:
+# b7s.val - to 1 if the home location should be saved using tags, 0 otherwise
 #
 # Usage:
-# /scoreboard players tag @s <add|remove> b7s:home_as_tags
+# /scoreboard players set @s b7s.val (0|1)
 # /function b7s:config/home/set_save_as_tags
 
-scoreboard players set b7s:config b7s:home_as_tags 0
-execute @s[tag=b7s:home_as_tags] ~ ~ ~ scoreboard players set #b7s:config b7s:home_as_tags 1
+scoreboard players set #b7s.save_home_as_tags b7s.val 0
+execute unless score @s b7s.val matches 0 run scoreboard players set #b7s.save_home_as_tags b7s.val 1

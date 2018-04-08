@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 3,
-		"description": "BareBones"
+		"pack_format": 4,
+		"description": "Essential functionality for vanilla Minecraft servers and Realms"
 	}
 }
