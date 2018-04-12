@@ -21,10 +21,5 @@
 # /scoreboard players set <entity> b7s.rot_y <rot_y>
 # /execute as <entity> run function b7s:entity/home/set_loc
 
-scoreboard players operation @s b7s._val = @s b7s.val
-
-function b7s:config/home/get_save_as_tags
-execute if score @s b7s.val matches 1 run function b7s:entity/home/set_loc/_if_save_as_tags
-execute unless score @s b7s.val matches 1 run function b7s:entity/home/set_loc/_unless_save_as_tags
-
-scoreboard players operation @s b7s.val = @s b7s._val
+execute unless score #b7s.save_home_as_tags b7s.val matches 0 run function b7s:entity/home/set_loc/_if_save_as_tags
+execute if score #b7s.save_home_as_tags b7s.val matches 0 run function b7s:entity/home/set_loc/_unless_save_as_tags
