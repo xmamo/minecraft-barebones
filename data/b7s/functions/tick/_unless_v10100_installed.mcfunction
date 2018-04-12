@@ -6,6 +6,6 @@ execute unless score #b7s._version b7s.val matches 10000.. run function b7s:tick
 
 scoreboard objectives add b7s._sleep_time dummy
 
-scoreboard players set #b7s.multiplayer_bed b7s.val 0
+scoreboard players set #b7s.multiplayer_bed b7s.val 1
 
 scoreboard players set #b7s._version b7s.val 10100
