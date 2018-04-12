@@ -8,7 +8,7 @@ execute if score @s b7s._left matches -2147483648.. run function b7s:tick/_as_pl
 
 execute if entity @s[nbt={Sleeping:0B}] run scoreboard players reset @s b7s._sleep_time
 execute unless entity @s[nbt={Sleeping:0B}] run scoreboard players add @s b7s._sleep_time 1
-execute if score @s b7s._sleep_time matches 10.. unless score #b7s.multiplayer_bed b7s.val matches 0 run function b7s:tick/_as_player_if_sleeping_if_multiplayer_bed_enabled
+execute if score @s b7s._sleep_time matches 100.. unless score #b7s.multiplayer_bed b7s.val matches 0 run function b7s:tick/_as_player_if_sleeping_if_multiplayer_bed_enabled
 
 scoreboard players enable @s b7s.getinfo
 execute unless score @s b7s.getinfo matches 0 run function b7s:command/getinfo
