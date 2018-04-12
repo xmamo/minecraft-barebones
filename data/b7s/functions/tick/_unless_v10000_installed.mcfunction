@@ -51,5 +51,3 @@ scoreboard players set #b7s.save_tp_req_as_tags b7s.val 0
 scoreboard players set #b7s.persist_tp_req b7s.val 0
 scoreboard players set #b7s.save_back_as_tags b7s.val 0
 scoreboard players set #b7s.persist_back b7s.val 0
-
-scoreboard players set #b7s._version b7s.val 10000
