@@ -2,6 +2,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+scoreboard players operation @s b7s._val = @s b7s.val
+
 execute unless score @s b7s.id matches -2147483648.. run function b7s:tick/_as_player_unless_id_set
 
 execute if score @s b7s._left matches -2147483648.. run function b7s:tick/_as_player_if_left
@@ -37,3 +39,5 @@ execute unless score @s b7s.tpaccept matches 0 run scoreboard players reset @s b
 scoreboard players enable @s b7s.tpback
 execute unless score @s b7s.tpback matches 0 run function b7s:command/tpback
 execute unless score @s b7s.tpback matches 0 run scoreboard players reset @s b7s.tpback
+
+scoreboard players operation @s b7s.val = @s b7s.val
