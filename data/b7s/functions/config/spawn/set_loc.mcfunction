@@ -21,9 +21,9 @@
 # /scoreboard players set @s b7s.rot_y <rot_y>
 # /function b7s:config/spawn/set_loc
 
-scoreboard players operation #b7s.spawn b7s.dim = @s[scores={b7s.dim=-2147483648..}] b7s.dim
-scoreboard players operation #b7s.spawn b7s.x = @s[scores={b7s.x=-2147483648..}] b7s.x
-scoreboard players operation #b7s.spawn b7s.y = @s[scores={b7s.y=-2147483648..}] b7s.y
-scoreboard players operation #b7s.spawn b7s.z = @s[scores={b7s.z=-2147483648..}] b7s.z
-scoreboard players operation #b7s.spawn b7s.rot_x = @s[scores={b7s.rot_x=-2147483648..}] b7s.rot_x
-scoreboard players operation #b7s.spawn b7s.rot_y = @s[scores={b7s.rot_y=-2147483648..}] b7s.rot_y
+execute if score @s b7s.dim matches -2147483648.. run scoreboard players operation #b7s.spawn b7s.dim = @s b7s.dim
+execute if score @s b7s.x matches -2147483648.. run scoreboard players operation #b7s.spawn b7s.x = @s b7s.x
+execute if score @s b7s.y matches -2147483648.. run scoreboard players operation #b7s.spawn b7s.y = @s b7s.y
+execute if score @s b7s.z matches -2147483648.. run scoreboard players operation #b7s.spawn b7s.z = @s b7s.z
+execute if score @s b7s.rot_x matches -2147483648.. run scoreboard players operation #b7s.spawn b7s.rot_x = @s b7s.rot_x
+execute if score @s b7s.rot_y matches -2147483648.. run scoreboard players operation #b7s.spawn b7s.rot_y = @s b7s.rot_y

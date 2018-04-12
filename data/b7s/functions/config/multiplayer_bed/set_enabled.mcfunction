@@ -14,5 +14,5 @@
 
 scoreboard players set #b7s.multiplayer_bed b7s.val 0
 
-scoreboard players set #b7s.multiplayer_bed b7s.val 0
-execute unless score @s b7s.val matches 0 run scoreboard players set #b7s.multiplayer_bed b7s.val 1
+execute if score @s b7s.val matches -2147483648.. if score @s b7s.val matches 0 run scoreboard players set #b7s.multiplayer_bed b7s.val 0
+execute if score @s b7s.val matches -2147483648.. unless score @s b7s.val matches 0 run scoreboard players set #b7s.multiplayer_bed b7s.val 1

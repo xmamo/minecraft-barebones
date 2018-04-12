@@ -12,5 +12,5 @@
 # /scoreboard players set @s b7s.val (0|1)
 # /function b7s:config/back/set_persist
 
-scoreboard players set #b7s.persist_back b7s.val 0
-execute unless score @s b7s.val matches 0 run scoreboard players set #b7s.persist_back b7s.val 1
+execute if score @s b7s.val matches -2147483648.. if score @s b7s.val matches 0 run scoreboard players set #b7s.persist_back b7s.val 0
+execute if score @s b7s.val matches -2147483648.. unless score @s b7s.val matches 0 run scoreboard players set #b7s.persist_back b7s.val 1
