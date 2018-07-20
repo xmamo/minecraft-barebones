@@ -8,7 +8,7 @@ if __name__ == '__main__':
 	for script in file.parent.glob('**/*.py'):
 		if script != file and script.suffixes == ['.mcfunction', '.py']:
 			mcfunction = script.with_suffix('')
-			print('Rendering {}...'.format(str(mcfunction)), end = '')
+			print('Rendering {}...'.format(str(mcfunction)), end='')
 			with mcfunction.open('w') as f:
-				subprocess.run([sys.executable, str(script)], stdout = f)
+				subprocess.run([sys.executable, str(script)], stdout=f)
 			print(' DONE')

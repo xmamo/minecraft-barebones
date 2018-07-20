@@ -27,5 +27,5 @@ print('execute if score @s b7s._tmp_1 matches ..-1 run scoreboard players add @s
 print()
 
 for i in range(14, -1, -1):
-	print('execute if score @s b7s._tmp_1 matches {}.. run time add {}'.format(2 ** i, 2** i))
-	print('execute if score @s b7s._tmp_1 matches {}.. run scoreboard players remove @s b7s._tmp_1 {}'.format(2 ** i, 2** i))
+	print('execute if score @s b7s._tmp_1 matches {}.. run time add {}'.format(2 ** i, 2 ** i))
+	print('execute if score @s b7s._tmp_1 matches {}.. run scoreboard players remove @s b7s._tmp_1 {}'.format(2 ** i, 2 ** i))
